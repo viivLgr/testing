@@ -6,5 +6,9 @@ brancher:
   only: 
     - "dev"
     - "master"
+install:
+  - "npm install"
+  - "npm install -g codecov"
 script: 
   - "npm run cover"
+  - "codecov --token=:866d9f5e-770d-49a1-b538-cc01dc451ee4"
